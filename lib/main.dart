@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:market/Cards/time.dart';
 import 'package:market/homeScreen.dart';
+import 'package:market/pages/homePage.dart';
 
 import 'color/colors.dart';
 
@@ -39,13 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(
-          Icons.arrow_back_ios,
+        appBar: AppBar(
+          leading: Icon(
+            Icons.arrow_back_ios,
+          ),
+          title: Text("USD / INR"),
         ),
-        title: Text("USD / INR"),
-      ),
-      body: homeScreen(),
-    );
+        body: HomePage()
+        //  homeScreen(),
+        );
   }
 }
